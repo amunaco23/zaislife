@@ -17,7 +17,7 @@
 .header  {
     height: 27px;
     color: #fff;
-    background-color: rgba(208, 2, 27, 0.74);
+    background-color: #DD4558;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     vertical-align: middle;
 }
@@ -31,6 +31,10 @@
     letter-spacing: -0.2px;
     text-align: left;
     color: #ffffff;
+}
+
+.header span a {
+    color: #fff;
 }
 
 .header img {
@@ -49,9 +53,9 @@
 }
 
 .filter-row .filter-item {
-    width: 49px;
+    margin-right: 7px;
     height: 12px;
-    font-size: 9px;
+    font-size: 9pt;
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
@@ -63,12 +67,16 @@
 }
 
 .filter-row .selected {
-    font-size: 11px;
+    font-size: 11pt;
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     color: #000000;
+}
+
+.filter-row img {
+    float: right;
 }
 
 .table-row-wrapper{
@@ -85,6 +93,16 @@
     height: 11px;
     border: none;
     border-bottom: solid 1px #000000;
+}
+
+.loader {
+    text-align: center;
+    height: 500px;
+    line-height: 500px;
+}
+
+.loader img {
+    vertical-align: middle;
 }
 
 .table thead tr td:first-child{
@@ -219,4 +237,61 @@
     color: #9b9b9b;
     text-align: right;
     padding-right: 25px;
+}
+
+.about-body{
+    text-align: center;
+    width: 288px;
+    margin: 0 auto;
+}
+
+.about-body h3 {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    color: #000000;
+}
+
+.about-body .about-inner-body {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    color: #9b9b9b;
+}
+
+.about-body .about-inner-body div {
+    margin-bottom: 20px;
+}
+
+.about-body .about-bottom div{
+    margin-bottom: 10px;
+}
+
+.about-body .about-bottom .emoji-row {
+    font-size: 15px;
+}
+
+.about-body .about-bottom a {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    color: #000000;
+}
+
+.about-body .social img {
+    width: 15px;
+    height: 15px;
+}
+
+.about-body .quote-image img {
+    width: 158px;
+    height: 109px;
+    object-fit: contain;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }

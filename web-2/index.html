@@ -7,6 +7,7 @@
     <base href="/">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -58,6 +59,13 @@
             </tr>
         {{/each}}
       </script>
+      <script id="city-row" type="text/x-handlebars-template">
+        {{#each items}}
+            <div class="filter-item">
+                {{this}}
+            </div>
+        {{/each}}
+      </script>
     <script src="js/main.js"></script>
 </head>
 
@@ -67,32 +75,31 @@
         <div class="top-nav">
             <div class="row header">
                 <div class="col-md-11">
-                    <span>ZAISLIFE.com</span>                
+                    <span><a href="index.html">ZAISLIFE.com</a></span>                
                 </div>
                 <div class="col-md-1">
-                    <a href="https://twitter.com/zaislife" target="_blank">
+                    <a href="https://twitter.com/za_is_life" target="_blank">
                         <img src="img/instagram.png" srcset="img/instagram@2x.png 2x,img/instagram@3x.png 3x">
                     </a>
-                    <a href="https://instagram.com/zaislife" target="_blank">
-                        <img src="img/instagram.png" srcset="img/instagram@2x.png 2x,img/instagram@3x.png 3x">
+                    <a href="https://www.instagram.com/_zaislife/" target="_blank">
+                        <img src="img/twitter.png" srcset="img/twitter@2x.png 2x,img/twitter@3x.png 3x">
                     </a>
                 </div>
             </div>
             <div class="row filter-row">
-                <div class="col-md-12">
-                    <div class="filter-item selected">
-                        Chicago
-                    </div>
-                    <div class="filter-item">
-                        New York
-                    </div>
-                    <div class="filter-item">
-                        Detroit
-                    </div>
+                <div class="col-md-11 city-container">
+                </div>
+                <div class="col-md-1">
+                    <img src="img/slice-color.png" srcset="img/slice-color@2x.png 2x,img/slice-color@3x.png 3x" class="slice-color">
                 </div>
             </div>
         </div>
-        <div class="table-row-wrapper">
+        <div class="row">
+            <div class="col-md-12 loader">
+                <img src="img/loading.gif" />
+            </div>
+        </div>
+        <div class="table-row-wrapper" style="display: none">
             <div class="row">
                 <div class="col-md-12 table-container table-responsive">
                     <table class="table">
@@ -132,13 +139,13 @@
         </div>
         <div class="row bottom-nav">
             <div class="col-md-8 bottom-nav-col">
-                <a href="https://twitter.com/zaislife" target="_blank">
+                <a href="https://twitter.com/za_is_life" target="_blank">
+                    <img src="img/twitter_grey.png"  srcset="img/twitter_grey@2x.png 2x, img/twitter_grey@3x.png 3x">
+                </a>
+                <a href="https://www.instagram.com/_zaislife/" target="_blank">
                     <img src="img/instagram_grey.png"  srcset="img/instagram_grey@2x.png 2x, img/instagram_grey@3x.png 3x">
                 </a>
-                <a href="https://instagram.com/zaislife" target="_blank">
-                    <img src="img/instagram_grey.png"  srcset="img/instagram_grey@2x.png 2x, img/instagram_grey@3x.png 3x">
-                </a>
-                <a href="/about.html" class="about">
+                <a href="about.html" class="about">
                     About
                 </a>
             </div>
