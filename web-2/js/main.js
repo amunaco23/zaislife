@@ -21,7 +21,7 @@ function showInfo(data, tabletop) {
     // console.log(data);
     tableData = data.MASTER.elements;
     setFilters();
-    $(".loader").hide();
+    $(".loader-container").hide();
     $(".table-row-wrapper").show();
 }
 
