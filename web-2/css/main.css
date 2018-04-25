@@ -6,12 +6,13 @@
 .page-wrapper{
     display: flex;
     flex-direction: column;
+    position: fixed;
     height: 100%;
 }
 
 .top-nav {
     height: 91px;
-    flex: 1;
+    flex: 0 0 auto;
 }
 
 .header  {
@@ -95,10 +96,17 @@
     border-bottom: solid 1px #000000;
 }
 
+.loader-container{
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.loader-row {
+    width: 100%;
+}
+
 .loader {
     text-align: center;
-    height: 500px;
-    line-height: 500px;
 }
 
 .loader img {
@@ -199,7 +207,7 @@
 }
 
 .bottom-nav {
-    flex: 1;
+    flex: 0 0 auto;
     height: 42px;
     padding: 10px 15px;
     line-height: 32px;
@@ -243,6 +251,7 @@
     text-align: center;
     width: 288px;
     margin: 0 auto;
+    flex: 1 1 auto;
 }
 
 .about-body h3 {
