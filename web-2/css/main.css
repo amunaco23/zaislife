@@ -253,6 +253,7 @@
     color: #9b9b9b;
     text-align: right;
     padding-right: 25px;
+    float: right;
 }
 
 .about-body{
