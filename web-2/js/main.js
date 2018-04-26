@@ -1,9 +1,7 @@
 $(document).ready(function(){
     initTableData();
-    $(".filter-row .filter-item").click(filterRows);
 });
 
-// var publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/1o5rqwDvo2Q3-68HTWGC-RMFOx84YRQEBJbvZp-PXRnQ/edit#gid=0";
 var key = "1o5rqwDvo2Q3-68HTWGC-RMFOx84YRQEBJbvZp-PXRnQ";
 var defaultCity = "Chicago"
 var tableData; 
@@ -23,6 +21,7 @@ function showInfo(data, tabletop) {
     setFilters();
     $(".loader-container").hide();
     $(".table-row-wrapper").show();
+    $(".table").tablesort();    
 }
 
 function setFilters(){
@@ -48,6 +47,7 @@ function filterRows(){
 
     $(".selected").removeClass("selected");
     filterByItem(filter);
+    $(".table").tablesort();    
 }
 
 function filterByItem(filterRow){

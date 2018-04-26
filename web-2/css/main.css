@@ -117,40 +117,44 @@
     margin-top: -64px;
 }
 
-.table thead tr td:first-child{
-    width: 2%;
+.table-row-wrapper .row {
+    width: 100%;
 }
 
-.table thead tr td:nth-child(2){
+.table thead tr th:first-child{
+    width: 3%;
+}
+
+.table thead tr th:nth-child(2){
     width: 15%;
 }
 
-.table thead tr td:nth-child(3){
+.table thead tr th:nth-child(3){
     width: 10%;
 }
 
-.table thead tr td:nth-child(4){
+.table thead tr th:nth-child(4){
     width: 5%;
 }
 
-.table thead tr td:nth-child(5){
+.table thead tr th:nth-child(5){
     width: 5%;
 }
 
-.table thead tr td:nth-child(6){
+.table thead tr th:nth-child(6){
     width: 5%;
 }
 
-.table thead tr td:nth-child(7){
+.table thead tr th:nth-child(7){
     width: 5%;
 }
 
-.table thead tr td:nth-child(8){
-    width: 53%;
+.table thead tr th:nth-child(8){
+    width: 52%;
 }
 
-.table thead tr td {
-    font-size: 8px;
+.table thead tr th {
+    font-size: 10px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -162,6 +166,7 @@
     height: 11px;
     padding: 0px 12px 12px;
     text-align: middle;
+    cursor: pointer;
 }
 
 .table tbody tr {
@@ -208,6 +213,41 @@
     color: #000;
     font-size: 11px;
     font-weight: 900;
+}
+
+.table th span{
+    position: relative;
+    /* display: block;
+    width: 100%; */
+}
+
+.table th span:before,
+.table th span:after {
+	border: 4px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	right: 5px;
+	top: 50%;
+	position: absolute;
+	width: 0;
+}
+.table th span:before {
+	border-bottom-color: #666;
+	margin-top: -9px;
+}
+
+.table th span:after {
+	border-top-color: #666;
+	margin-top: 1px;
+}
+
+.table th.sorted.ascending:after {
+    content: "  \2191";
+}
+ 
+.table th.sorted.descending:after {
+    content: " \2193";
 }
 
 .bottom-nav {
