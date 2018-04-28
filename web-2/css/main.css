@@ -351,3 +351,10 @@
     object-fit: contain;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
+
+.about-body .quote-image iframe {
+    width: 158px;
+    height: 109px;
+    object-fit: contain;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
