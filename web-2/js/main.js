@@ -20,7 +20,7 @@ function showInfo(data, tabletop) {
     tableData = data.MASTER.elements;
     setFilters();
     $(".loader-container").hide();
-    $(".table-row-wrapper").show();
+    $(".hidden-on-load").show();
     $(".table").tablesort();    
 }
 

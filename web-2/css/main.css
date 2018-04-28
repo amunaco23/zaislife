@@ -231,22 +231,22 @@
 	width: 0;
 }
 .table th span.arrows:before {
-	border-bottom-color: #666;
+	border-bottom-color: #999999;
 	margin-top: -9px;
 }
 
 .table th span.arrows:after {
-	border-top-color: #666;
+	border-top-color: #999999;
 	margin-top: 1px;
 }
 
-/* .table th.sorted.ascending:after {
-    content: "  \2191";
+.table th.sorted.ascending span.arrows:after {
+    border-top-color: #000;
 }
  
-.table th.sorted.descending:after {
-    content: " \2193";
-} */
+.table th.sorted.descending span.arrows:before {
+    border-bottom-color: #000;
+}
 
 .bottom-nav {
     flex: 0 0 auto;
