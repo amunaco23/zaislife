@@ -253,6 +253,15 @@
     text-align: left;
 }
 
+.table .zaisliferecom .map-all {
+    font-size: 8px;
+    font-weight: 900;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+    float: right;
+  }
+
 .table th span.arrows {
     display: inline-block;
     height: 3px;

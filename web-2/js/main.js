@@ -25,6 +25,7 @@ function showInfo(data, tabletop) {
     tableData = data.MASTER.elements;
     setFilters();
     showColumns();
+    setLinks();
     $(".loader-container").hide();
     $(".hidden-on-load").show();
     $(".table").tablesort();    
@@ -53,6 +54,7 @@ function filterRows(){
     $(".selected").removeClass("selected");
     filterByItem(filter);
     showColumns();
+    setLinks();
     $(".table").tablesort();    
 }
 
@@ -76,6 +78,10 @@ var BROOKLYN = "BROOKLYN";
 var CHICAGO = "CHICAGO";
 var DETROIT = "DETROIT";
 
+var chicago_url = "https://drive.google.com/open?id=10nPscHlwyz5rTkc9lNgzzyhyfcrUtbRl&usp=sharing"
+var nyc_url = "https://drive.google.com/open?id=1thw_xwU_gzCTroVLbOqwmS_-U-PiJ2p7&usp=sharing"
+var detroit_url = "https://drive.google.com/open?id=13ekySVR0be3H2rdDda7OCAv1tk_eqze5&usp=sharing"
+
 function showColumns(){
     var filterText = $(".selected").text().trim().toUpperCase();
 
@@ -93,6 +99,21 @@ function showColumns(){
         $(".infatuation").show();
         $(".barstool").show();
         $(".yelp").show();
+    }
+
+}
+
+function setLinks(){
+    var filterText = $(".selected").text().trim().toUpperCase();
+
+    if (filterText == DETROIT) {
+        $(".map-all").attr("href", detroit_url);
+    }
+    else if (filterText == CHICAGO) {
+        $(".map-all").attr("href", chicago_url);
+    }
+    else if (filterText == NEW_YORK || filterText == BROOKLYN) {
+        $(".map-all").attr("href", nyc_url);
     }
 
 }
