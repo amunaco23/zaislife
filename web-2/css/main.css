@@ -329,6 +329,12 @@
 
 .about-body .about-bottom .emoji-row {
     font-size: 15px;
+    height: 21px;
+}
+
+.about-body .about-bottom .emoji-row img {
+    width: 21px;
+    height: 21px;
 }
 
 .about-body .about-bottom a {
