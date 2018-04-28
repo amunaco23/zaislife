@@ -3,6 +3,12 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.table-row-wrapper {
+    background-image: url("../img/SliceGrey_alex.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
 .page-wrapper{
     display: flex;
     flex-direction: column;
@@ -213,6 +219,38 @@
     color: #000;
     font-size: 11px;
     font-weight: 900;
+}
+
+.table .rest-style {
+    text-align: center;
+}
+
+.table .rest-name {
+    text-align: left;
+}
+
+.table .avg {
+    text-align: center;
+}
+
+.table .barstool {
+    text-align: center;
+}
+
+.table .yelp {
+    text-align: center;
+}
+
+.table .infatuation {
+    text-align: center;
+}
+
+.table .zaislifescore {
+    text-align: center;
+}
+
+.table .zaisliferecom {
+    text-align: left;
 }
 
 .table th span.arrows {

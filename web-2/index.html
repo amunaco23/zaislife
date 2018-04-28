@@ -8,6 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/zaislife/favicon.ico">
     <link rel="icon" type="image/x-icon" href="/zaislife/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,7 +22,7 @@
     <script id="za-row" type="text/x-handlebars-template">
         {{#each items}}
             <tr>
-                <td class="highlighted-review">
+                <td class="highlighted-review avg">
                     <span>8.9</span>
                 </td>
                 <td class="rest-name">
@@ -30,21 +31,21 @@
                 <td class="rest-style">
                     {{style}}
                 </td>
-                <td>
+                <td class="barstool">
                     {{#if barstool-url}}
                         <a href="{{barstool-url}}" target="_blank">{{barstool}}</a>
                     {{else}}
                         {{barstool}}
                     {{/if}}
                 </td>
-                <td>
+                <td class="yelp">
                     {{#if yelp-url}}
                         <a href="{{yelp-url}}" target="_blank">{{yelp}}</a>
                     {{else}}
                         {{yelp}}
                     {{/if}}
                 </td>
-                <td>
+                <td class="infatuation">
                     {{#if infatuation-url}}
                         <a href="{{infatuation-url}}" target="_blank">{{infatuation}}</a>
                     {{else}}
@@ -108,28 +109,28 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>
+                                <th class="avg">
                                     <span>Avg</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="rest-name">
                                     <span>Restaurant</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="rest-style">
                                     <span>Style</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="barstool">
                                     <span>BarStool</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="yelp">
                                     <span>Yelp</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="infatuation">
                                     <span>Infatuation</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="zaislifescore">
                                     <span>ZaIsLife</span><span class="arrows"></span>
                                 </th>
-                                <th>
+                                <th class="zaisliferecom">
                                     <span>ZaIsLife Recommendation</span><span class="arrows"></span>
                                 </th>
                             </tr>

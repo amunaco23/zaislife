@@ -19,13 +19,13 @@ function showInfo(data, tabletop) {
     // console.log(data);
     tableData = data.MASTER.elements;
     setFilters();
+    showColumns();
     $(".loader-container").hide();
     $(".hidden-on-load").show();
     $(".table").tablesort();    
 }
 
 function setFilters(){
-    //_.uniq([1, 2, 1, 4, 1, 3]);
     var cities = _.pluck(tableData, 'city');
     cities = _.uniq(cities);
     cities = _.filter(cities, function(city){ return city && city != ""; });
@@ -47,6 +47,7 @@ function filterRows(){
 
     $(".selected").removeClass("selected");
     filterByItem(filter);
+    showColumns();
     $(".table").tablesort();    
 }
 
@@ -63,4 +64,30 @@ function showTableDataByFilter(city){
     var template = Handlebars.compile(source);
     var html = template(handleBarData);
     $(".table tbody").html(html);
+}
+
+var NEW_YORK = "NEW YORK";
+var BROOKLYN = "BROOKLYN";
+var CHICAGO = "CHICAGO";
+var DETROIT = "DETROIT";
+
+function showColumns(){
+    var filterText = $(".selected").text().trim().toUpperCase();
+
+    if (filterText == DETROIT) {
+        $(".infatuation").hide();
+        $(".barstool").hide();
+        $(".yelp").show();
+    }
+    else if (filterText == CHICAGO) {
+        $(".infatuation").show();
+        $(".barstool").hide();
+        $(".yelp").show();
+    }
+    else if (filterText == NEW_YORK || filterText == BROOKLYN) {
+        $(".infatuation").show();
+        $(".barstool").show();
+        $(".yelp").show();
+    }
+
 }
