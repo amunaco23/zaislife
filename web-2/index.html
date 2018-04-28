@@ -27,7 +27,11 @@
                     <span>8.9</span>
                 </td>
                 <td class="rest-name">
-                    {{restaurant}}
+                    {{#if google-maps}}
+                        <a href="{{google-maps}}" target="_blank">{{restaurant}}</a>
+                    {{else}}
+                        {{restaurant}}
+                    {{/if}}
                 </td>
                 <td class="rest-style">
                     {{style}}

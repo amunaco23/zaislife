@@ -222,6 +222,10 @@
     font-weight: 900;
 }
 
+.table tbody tr td.rest-name a {
+    color: #000;
+}
+
 .table .rest-style {
     text-align: center;
 }
