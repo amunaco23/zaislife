@@ -173,6 +173,7 @@
     padding: 0px 12px 12px;
     text-align: middle;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .table tbody tr {
