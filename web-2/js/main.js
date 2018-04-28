@@ -1,5 +1,10 @@
 $(document).ready(function(){
     initTableData();
+    var dateOffset = (24*60*60*1000) * 2;
+    var myDate = new Date();
+    myDate.setTime(myDate.getTime() - dateOffset);
+    var dateString = (myDate.getMonth() + 1) + '/' + myDate.getDate() + '/' +  myDate.getFullYear();
+    $(".updated-text").text(dateString);
 });
 
 var key = "1o5rqwDvo2Q3-68HTWGC-RMFOx84YRQEBJbvZp-PXRnQ";

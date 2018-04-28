@@ -289,16 +289,26 @@
 .bottom-nav {
     flex: 0 0 auto;
     height: 42px;
-    padding: 10px 15px;
+    padding: 0px 15px 10px;
     line-height: 32px;
     border-top: solid 1px rgba(155, 155, 155, 0.17);
+}
+
+.last-updated-container {
+    flex: 0 0 auto;
+    padding: 10px 15px 0px;
+}
+
+.last-updated {
+    color: #9b9b9b;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 
 .bottom-nav .bottom-nav-col {
     vertical-align: middle;
     line-height: 22px;
 }
-
 .bottom-nav img {
     height: 12px;
 }
