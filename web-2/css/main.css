@@ -262,6 +262,14 @@
     float: right;
   }
 
+  .table .zaisliferecom .map-image{
+    width: 10.5px;
+    height: 15px;
+    object-fit: contain;
+    background-color: #fff;
+    margin-right: 5px;
+  }
+
 .table th span.arrows {
     display: inline-block;
     height: 3px;
