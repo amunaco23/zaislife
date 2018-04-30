@@ -3,6 +3,10 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.container-fluid {
+    padding-right: 0px;
+}
+
 .table-row-wrapper {
     background-image: url("../img/SliceGrey_alex.png");
     background-repeat: no-repeat;
