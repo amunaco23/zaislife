@@ -28,7 +28,8 @@ function showInfo(data, tabletop) {
     setLinks();
     $(".loader-container").hide();
     $(".hidden-on-load").show();
-    $(".table").tablesort();    
+    $(".table").tablesort();
+    handleOverflow();
 }
 
 function setFilters(){
@@ -42,7 +43,7 @@ function setFilters(){
     $(".city-container").html(html);
     var first = $(".filter-item").first();
     filterByItem(first);
-    $(".filter-row .filter-item").click(filterRows);    
+    $(".filter-row .filter-item").click(filterRows); 
 }
 
 function filterRows(){
@@ -55,7 +56,8 @@ function filterRows(){
     filterByItem(filter);
     showColumns();
     setLinks();
-    $(".table").tablesort();    
+    $(".table").tablesort();
+    handleOverflow();
 }
 
 function filterByItem(filterRow){
@@ -71,6 +73,7 @@ function showTableDataByFilter(city){
     var template = Handlebars.compile(source);
     var html = template(handleBarData);
     $(".table tbody").html(html);
+    $(".table tbody td.expand").click(expandRow);
 }
 
 var NEW_YORK = "NEW YORK";
@@ -86,13 +89,13 @@ function showColumns(){
     var filterText = $(".selected").text().trim().toUpperCase();
 
     if (filterText == DETROIT) {
-        $(".infatuation").hide();
-        $(".barstool").hide();
+        $(".infatuation").attr("style", "display: none !important;");
+        $(".barstool").attr("style", "display: none !important;");
         $(".yelp").show();
     }
     else if (filterText == CHICAGO) {
         $(".infatuation").show();
-        $(".barstool").hide();
+        $(".barstool").attr("style", "display: none !important;");
         $(".yelp").show();
     }
     else if (filterText == NEW_YORK || filterText == BROOKLYN) {
@@ -116,4 +119,17 @@ function setLinks(){
         $(".map-all").attr("href", nyc_url);
     }
 
+}
+
+function handleOverflow(){
+    $(".zaisliferecom").each(function(){
+        if ($(this)[0].scrollWidth >  $(this).innerWidth()) {
+            console.log("here");
+        }
+    });
+    
+}
+
+function expandRow(){
+    
 }

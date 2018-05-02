@@ -36,31 +36,34 @@
                 <td class="rest-style">
                     {{style}}
                 </td>
-                <td class="barstool">
+                <td class="barstool d-none d-md-table-cell">
                     {{#if barstool-url}}
                         <a href="{{barstool-url}}" target="_blank">{{barstool}}</a>
                     {{else}}
                         {{barstool}}
                     {{/if}}
                 </td>
-                <td class="yelp">
+                <td class="yelp d-none d-md-table-cell">
                     {{#if yelp-url}}
                         <a href="{{yelp-url}}" target="_blank">{{yelp}}</a>
                     {{else}}
                         {{yelp}}
                     {{/if}}
                 </td>
-                <td class="infatuation">
+                <td class="infatuation d-none d-md-table-cell">
                     {{#if infatuation-url}}
                         <a href="{{infatuation-url}}" target="_blank">{{infatuation}}</a>
                     {{else}}
                         {{infatuation}}
                     {{/if}}
                 </td>
-                <td>
+                <td class="d-none d-md-table-cell">
                     {{zaislife}}
                 </td>
-                <td>
+                <td class="expand d-md-none">
+                    +
+                </td>
+                <td class="zaisliferecom d-none d-sm-table-cell">
                     {{zaislife-notes}} ZaIsLife Recommendation
                 </td>
             </tr>
@@ -90,10 +93,10 @@
     <div class="container-fluid page-wrapper">
         <div class="top-nav">
             <div class="row header">
-                <div class="col-md-11">
+                <div class="col-11 col-md-11">
                     <span><a href="/zaislife/index.html">ZAISLIFE.com</a></span>                
                 </div>
-                <div class="col-md-1">
+                <div class="col-1 col-md-1">
                     <a href="https://www.instagram.com/_zaislife/" target="_blank">
                         <img src="img/instagram.png" srcset="img/instagram@2x.png 2x,img/instagram@3x.png 3x">
                     </a>
@@ -103,24 +106,25 @@
                 </div>
             </div>
             <div class="row filter-row  hidden-on-load" style="display: none">
-                <div class="col-md-11 city-container">
+                <div class="col-11 col-md-11 city-container">
                 </div>
-                <div class="col-md-1">
+                <div class="col-1 col-md-1">
                     <img src="img/slice-color.png" srcset="img/slice-color@2x.png 2x,img/slice-color@3x.png 3x" class="slice-color">
                 </div>
             </div>
         </div>
         <div class="loader-container">
             <div class="row loader-row">
-                <div class="col-md-12 loader">
+                <div class="col-12 col-md-12 loader">
                     <img src="img/loading.gif" />
                 </div>
             </div>
         </div>
         <div class="table-row-wrapper hidden-on-load" style="display: none">
             <div class="row">
-                <div class="col-md-12 table-container table-responsive">
+                <div class="col-12 col-md-12 table-container table-responsive">
                     <table class="table">
+                        <caption>Last Updated: <span class="updated-text"></span></caption>
                         <thead>
                             <tr>
                                 <th class="avg">
@@ -132,19 +136,22 @@
                                 <th class="rest-style">
                                     <span>Style</span><span class="arrows"></span>
                                 </th>
-                                <th class="barstool">
+                                <th class="barstool d-none d-md-table-cell">
                                     <span>BarStool</span><span class="arrows"></span>
                                 </th>
-                                <th class="yelp">
+                                <th class="yelp d-none d-md-table-cell">
                                     <span>Yelp</span><span class="arrows"></span>
                                 </th>
-                                <th class="infatuation">
+                                <th class="infatuation d-none d-md-table-cell">
                                     <span>Infatuation</span><span class="arrows"></span>
                                 </th>
-                                <th class="zaislifescore">
+                                <th class="zaislifescore d-none d-md-table-cell">
                                     <span>ZaIsLife</span><span class="arrows"></span>
                                 </th>
-                                <th class="zaisliferecom">
+                                <th class="expand d-md-none">
+                                    <span></span>
+                                </th>
+                                <th class="zaisliferecom d-none d-sm-table-cell">
                                     <span>ZaIsLife Recommendation</span><span class="arrows"></span>
                                     <a class="map-all" target="_blank">
                                         <img src="img/map-placeholder.png" srcset="img/map-placeholder@2x.png 2x, img/map-placeholder@3x.png 3x" class="map-image">
@@ -156,9 +163,9 @@
                         <tbody>
                         </tbody>
                     </table>
-                    <div class="col-12 col-md-12 last-updated bottom-nav-col">
+                    <!-- <div class="col-12 col-md-12 last-updated bottom-nav-col">
                         Last Updated: <span class="updated-text"></span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
