@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="/img/homeicon.png">
     <link rel="icon" type="image/x-icon" href="/zaislife/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -36,37 +36,35 @@
                 <td class="rest-style">
                     {{style}}
                 </td>
-                <td class="barstool d-none d-md-table-cell">
+                <td class="barstool d-none d-lg-table-cell">
                     {{#if barstool-url}}
                         <a href="{{barstool-url}}" target="_blank">{{barstool}}</a>
                     {{else}}
                         {{barstool}}
                     {{/if}}
                 </td>
-                <td class="yelp d-none d-md-table-cell">
+                <td class="yelp d-none d-lg-table-cell">
                     {{#if yelp-url}}
                         <a href="{{yelp-url}}" target="_blank">{{yelp}}</a>
                     {{else}}
                         {{yelp}}
                     {{/if}}
                 </td>
-                <td class="infatuation d-none d-md-table-cell">
+                <td class="infatuation d-none d-lg-table-cell">
                     {{#if infatuation-url}}
                         <a href="{{infatuation-url}}" target="_blank">{{infatuation}}</a>
                     {{else}}
                         {{infatuation}}
                     {{/if}}
                 </td>
-                <td class="d-none d-md-table-cell zaislifescore">
+                <td class="d-none d-lg-table-cell zaislifescore">
                     {{zaislife}}
                 </td>
-                <td class="expand d-md-none">
+                <td class="expand d-lg-none">
                     +
                 </td>
                 <td class="zaisliferecom d-none d-sm-table-cell">
-                    <div>
-                        {{zaislife-notes}} ZaIsLife Recommendation
-                    </div>
+                    {{zaislife-notes}} ZaIsLife Recommendation
                 </td>
             </tr>
         {{/each}}
@@ -138,19 +136,19 @@
                                 <th class="rest-style">
                                     <span>Style</span><span class="arrows"></span>
                                 </th>
-                                <th class="barstool d-none d-md-table-cell">
+                                <th class="barstool d-none d-lg-table-cell">
                                     <span>BarStool</span><span class="arrows"></span>
                                 </th>
-                                <th class="yelp d-none d-md-table-cell">
+                                <th class="yelp d-none d-lg-table-cell">
                                     <span>Yelp</span><span class="arrows"></span>
                                 </th>
-                                <th class="infatuation d-none d-md-table-cell">
+                                <th class="infatuation d-none d-lg-table-cell">
                                     <span>Infatuation</span><span class="arrows"></span>
                                 </th>
-                                <th class="zaislifescore d-none d-md-table-cell">
+                                <th class="zaislifescore d-none d-lg-table-cell">
                                     <span>ZaIsLife</span><span class="arrows"></span>
                                 </th>
-                                <th class="expand d-md-none">
+                                <th class="expand d-lg-none">
                                     <span></span>
                                 </th>
                                 <th class="zaisliferecom d-none d-sm-table-cell">

@@ -147,39 +147,39 @@
 }
 
 .table thead tr th.avg{
-    width: 5%;
+    width: 62px;
 }
 
 .table thead tr th.rest-name{
-    width: 15%;
+    width: 330px;
 }
 
 .table thead tr th.rest-style{
-    width: 8%;
+    width: 90px;
 }
 
 .table thead tr th.barstool{
-    width: 6%;
+    width: 115px;
     min-width: 83px;
 }
 
 .table thead tr th.yelp{
-    width: 6%;
+    width: 70px;
     min-width: 42px;
 }
 
 .table thead tr th.infatuation{
-    width: 8%;
+    width: 120px;
     min-width: 92px;
 }
 
 .table thead tr th.zaislifescore{
-    width: 7%;
+    width: 85px;
     min-width: 66px;
 }
 
 .table thead tr th.expand{
-    width: 5%;
+    width: 55px;
 }
 
 .table thead tr th.zaisliferecom{
@@ -193,10 +193,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.table tbody tr td.zaisliferecom div {
-
+    width: 43%;
 }
 
 .table thead tr th {
@@ -210,7 +207,7 @@
     color: #000000;
     border: none;
     height: 11px;
-    padding: 0px 12px 7px;
+    padding: 0px 5px 7px;
     text-align: middle;
     cursor: pointer;
     text-transform: uppercase;
@@ -221,6 +218,10 @@
     display: inline-block;
 }
 
+.table thead tr th.expand span {
+    height: 16px;
+}
+
 .table tbody tr {
     height: 17px;
     border: none;
@@ -229,7 +230,7 @@
 .table tbody tr td {
     color: #9b9b9b;
     font-size: 15px;
-    padding: 0px 12px;
+    padding: 0px 5px;
     border: none;
     padding-top: 4px;
 }
@@ -304,7 +305,7 @@
 }
 
 .table tbody td.expand {
-    text-align: middle;
+    text-align: center;
     color: #000;
     font-weight: bold;
     cursor: pointer;
