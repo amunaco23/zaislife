@@ -160,18 +160,22 @@
 
 .table thead tr th.barstool{
     width: 6%;
+    min-width: 83px;
 }
 
 .table thead tr th.yelp{
     width: 6%;
+    min-width: 42px;
 }
 
 .table thead tr th.infatuation{
     width: 8%;
+    min-width: 92px;
 }
 
 .table thead tr th.zaislifescore{
     width: 7%;
+    min-width: 66px;
 }
 
 .table thead tr th.expand{
@@ -189,6 +193,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.table tbody tr td.zaisliferecom div {
+
 }
 
 .table thead tr th {
