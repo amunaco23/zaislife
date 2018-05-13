@@ -23,8 +23,8 @@
     <script id="za-row" type="text/x-handlebars-template">
         {{#each items}}
             <tr>
-                <td class="highlighted-review avg">
-                    <span>8.9</span>
+                <td class="highlighted-review avg {{avgStyle}}">
+                    <span>{{avgCalculated}}</span>
                 </td>
                 <td class="rest-name">
                     {{#if google-maps}}

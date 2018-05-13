@@ -261,8 +261,23 @@
 
 .table tbody tr td.highlighted-review span {
     border-radius: 8px;
-    background-color: rgba(168, 214, 167, 0.43);
+    /* background-color: rgba(168, 214, 167, 0.43); */
     padding: 2px 5px;
+    width: 31px;
+    display: inline-block;
+    text-align: center;
+}
+
+.table tbody tr td.high-tier span {
+    background-color: #A8D6A7;
+}
+
+.table tbody tr td.middle-tier span {
+    background-color: #ECF6EC;
+}
+
+.table tbody tr td.low-tier span {
+    background-color: #F4FAF4;
 }
 
 .table tbody tr td.rest-style {

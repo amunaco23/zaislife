@@ -66,8 +66,36 @@ function filterByItem(filterRow){
     showTableDataByFilter(filterText);
 };
 
+var HIGH_TIER = 8;
+var MIDDLE_TIER = 7;
+var LOW_TIER = 6;
+
+var HIGH_TIER_COLOR = "high-tier";
+var MIDDLE_TIER_COLOR = "middle-tier";
+var LOW_TIER_COLOR = "low-tier";
+
 function showTableDataByFilter(city){
     var filterdData = _.filter(tableData, function(item){ return item.city.toUpperCase() == city.toUpperCase(); });
+    
+    for (var index = 0; index < filterdData.length; index++){
+        if (filterdData[index].avg){
+            filterdData[index].avgCalculated = round(filterdData[index].avg, 1);
+            if (filterdData[index].avgCalculated >= HIGH_TIER){
+                filterdData[index].avgStyle = HIGH_TIER_COLOR;
+            }
+            else if (filterdData[index].avgCalculated < HIGH_TIER && filterdData[index].avgCalculated >= MIDDLE_TIER){
+                filterdData[index].avgStyle = MIDDLE_TIER_COLOR;
+            }
+            else if (filterdData[index].avgCalculated < MIDDLE_TIER && filterdData[index].avgCalculated >= LOW_TIER){
+                filterdData[index].avgStyle = LOW_TIER_COLOR;
+            }
+        }
+        else{
+            filterdData[index].avgCalculated = "";
+            filterdData[index].avgStyle = "";
+        }
+    }
+    
     var handleBarData = {items: filterdData};
     var source   = document.getElementById("za-row").innerHTML;
     var template = Handlebars.compile(source);
@@ -124,7 +152,6 @@ function setLinks(){
 function handleOverflow(){
     $(".zaisliferecom").each(function(){
         if ($(this)[0].scrollWidth >  $(this).innerWidth()) {
-            console.log("here");
         }
     });
     
@@ -140,4 +167,9 @@ function expandRow(){
         expandButton.text("+");
         expandButton.parents("tr").find(".mobile-information").slideUp();
     }
+}
+
+function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
 }
