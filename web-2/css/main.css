@@ -373,7 +373,8 @@
 }
 
 .table div.zaisliferecom {
-
+    overflow: visible;
+    white-space: normal;
 }
 
 .table tbody td.expand {
