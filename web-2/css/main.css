@@ -13,6 +13,12 @@
     background-position: center; 
 }
 
+@media (max-width: 1200px) {
+    .table-row-wrapper {
+        background-image: none;
+    }
+}
+
 .page-wrapper{
     display: flex;
     flex-direction: column;

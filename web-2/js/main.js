@@ -28,7 +28,7 @@ function showInfo(data, tabletop) {
     setLinks();
     $(".loader-container").hide();
     $(".hidden-on-load").show();
-    $(".table").tablesort();
+    $(".table").tablesort().data('tablesort').sort($("th.rest-name"));
     handleOverflow();
 }
 

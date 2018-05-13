@@ -27,7 +27,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
-  --breakpoint-sm: 788px;
+  --breakpoint-sm: 800px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1200px;
   --breakpoint-xl: 1200px;
@@ -561,7 +561,7 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .container {
     max-width: 540px;
   }
@@ -832,7 +832,7 @@ pre code {
   margin-left: 91.666667%;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -2246,7 +2246,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .form-inline label {
     display: -ms-flexbox;
     display: flex;
@@ -4025,7 +4025,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .navbar-expand-sm {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4455,7 +4455,7 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .card-deck {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -4486,7 +4486,7 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .card-group {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -4552,7 +4552,7 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -4841,7 +4841,7 @@ input[type="button"].btn-block {
   border-radius: 0.3rem;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .jumbotron {
     padding: 4rem 2rem;
   }
@@ -5440,7 +5440,7 @@ button.close {
   overflow: scroll;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -6245,7 +6245,7 @@ button.bg-dark:focus {
   display: inline-flex !important;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .d-sm-none {
     display: none !important;
   }
@@ -6618,7 +6618,7 @@ button.bg-dark:focus {
   align-self: stretch !important;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .flex-sm-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7186,7 +7186,7 @@ button.bg-dark:focus {
   float: none !important;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .float-sm-left {
     float: left !important;
   }
@@ -7676,7 +7676,7 @@ button.bg-dark:focus {
   margin-left: auto !important;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .m-sm-0 {
     margin: 0 !important;
   }
@@ -8706,7 +8706,7 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
-@media (min-width: 788px) {
+@media (min-width: 800px) {
   .text-sm-left {
     text-align: left !important;
   }
