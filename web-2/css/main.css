@@ -26,7 +26,8 @@
 }
 
 .header  {
-    height: 27px;
+    padding: 3px 8px 3px 0px;
+    height: 31px;
     color: #fff;
     background-color: #DD4558;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
@@ -65,7 +66,6 @@
 
 .filter-row .filter-item {
     margin-right: 7px;
-    height: 12px;
     font-size: 15px;
     font-weight: 900;
     font-style: normal;
@@ -163,21 +163,25 @@
 .table thead tr th.barstool{
     width: 115px;
     min-width: 83px;
+    text-align: center;
 }
 
 .table thead tr th.yelp{
     width: 70px;
     min-width: 42px;
+    text-align: center;
 }
 
 .table thead tr th.infatuation{
     width: 120px;
     min-width: 92px;
+    text-align: center;
 }
 
 .table thead tr th.zaislifescore{
     width: 85px;
     min-width: 66px;
+    text-align: center;
 }
 
 .table thead tr th.expand{
@@ -200,7 +204,7 @@
 
 .table thead tr th {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -235,6 +239,7 @@
     padding: 0px 5px;
     border: none;
     padding-top: 4px;
+    font-weight: 600;
 }
 
 .table tbody tr td a {
@@ -262,6 +267,7 @@
 
 .table tbody tr td.rest-style {
     color: #222;
+    font-weight: 600;
 }
 
 .table tbody tr td.rest-name {
@@ -287,6 +293,7 @@
 
 .table td.avg {
     /* text-align: center; */
+    font-weight: 400;
 }
 
 .table td.barstool {
@@ -314,7 +321,7 @@
     margin: 5px 0;
 }
 
-.table .mobile-information span {
+.table .mobile-information div span:first-child {
     text-transform: uppercase;
     width: 149px;
     display: inline-block;
@@ -328,6 +335,10 @@
     font-size: 14px;
     color: #9b9b9b;
     padding: 2px 0px;
+}
+
+.table tbody tr td .mobile-information div span:nth-child(2), .table tbody tr td .mobile-information div a {
+    color: #9b9b9b;
 }
 
 .table div.barstool {
@@ -358,7 +369,7 @@
 }
 
 .table .zaisliferecom .map-all {
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 900;
     text-align: left;
     color: #000000;
