@@ -131,5 +131,13 @@ function handleOverflow(){
 }
 
 function expandRow(){
-    
+    var expandButton = $(this);
+    if (expandButton.text().toLowerCase() == "+") {
+        expandButton.text("-");
+        expandButton.parents("tr").find(".mobile-information").slideDown();
+    }
+    else {
+        expandButton.text("+");
+        expandButton.parents("tr").find(".mobile-information").slideUp();
+    }
 }

@@ -130,8 +130,8 @@
     top: 50%;
     left: 50%;
     position: fixed;
-    margin-left: -64px;
-    margin-top: -64px;
+    margin-left: -32px;
+    margin-top: -32px;
 }
 
 .table-row-wrapper .row {
@@ -147,15 +147,17 @@
 }
 
 .table thead tr th.avg{
-    width: 62px;
+    width: 51px;
+    text-align: center;
 }
 
 .table thead tr th.rest-name{
-    width: 330px;
+    width: 275px;
 }
 
 .table thead tr th.rest-style{
-    width: 90px;
+    width: 80px;
+    text-align: center;
 }
 
 .table thead tr th.barstool{
@@ -266,42 +268,86 @@
     color: #000;
     font-size: 16px;
     font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .table tbody tr td.rest-name a {
     color: #000;
 }
 
-.table .rest-style {
+.table td.rest-style {
     text-align: center;
 }
 
-.table .rest-name {
+.table td.rest-name {
     text-align: left;
 }
 
-.table .avg {
+.table td.avg {
+    /* text-align: center; */
+}
+
+.table td.barstool {
     text-align: center;
 }
 
-.table .barstool {
+.table td.yelp {
     text-align: center;
 }
 
-.table .yelp {
+.table td.infatuation {
     text-align: center;
 }
 
-.table .infatuation {
+.table td.zaislifescore {
     text-align: center;
 }
 
-.table .zaislifescore {
-    text-align: center;
-}
-
-.table .zaisliferecom {
+.table td.zaisliferecom {
     text-align: left;
+}
+
+.table .mobile-information {
+    display: none;
+    margin: 5px 0;
+}
+
+.table .mobile-information span {
+    text-transform: uppercase;
+    width: 149px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.table .mobile-information div {
+    font-weight: 600;
+    font-size: 14px;
+    color: #9b9b9b;
+    padding: 2px 0px;
+}
+
+.table div.barstool {
+
+}
+
+.table div.yelp {
+
+}
+
+.table div.infatuation {
+
+}
+
+.table div.zaislifescore {
+
+}
+
+.table div.zaisliferecom {
+
 }
 
 .table tbody td.expand {
