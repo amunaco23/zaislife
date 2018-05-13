@@ -11,6 +11,8 @@
     background-image: url("../img/SliceGrey.png");
     background-repeat: no-repeat;
     background-position: center; 
+    flex-shrink: 1;
+    display: flex;
 }
 
 .page-wrapper{
@@ -91,11 +93,6 @@
     float: right;
 }
 
-.table-row-wrapper{
-    flex: 1 1 auto;
-    display: flex;
-}
-
 .table-container {
     flex: 0 0 auto;
     padding: 10px;
@@ -105,6 +102,15 @@
     table-layout: fixed;
     border-collapse: collapse;
     margin-bottom: 0;
+    flex-direction: column;
+    display: flex;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.table tbody {
+    flex-shrink: 1;
+    overflow: auto;
 }
 
 .table thead tr {
@@ -466,74 +472,4 @@
     text-align: right;
     padding-right: 25px;
     float: right;
-}
-
-.about-body{
-    text-align: center;
-    width: 288px;
-    margin: 0 auto;
-    flex: 1 1 auto;
-}
-
-.about-body h3 {
-    font-size: 13px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    color: #000000;
-}
-
-.about-body .about-inner-body {
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    color: #9b9b9b;
-}
-
-.about-body .about-inner-body div {
-    margin-bottom: 20px;
-}
-
-.about-body .about-bottom div{
-    margin-bottom: 10px;
-}
-
-.about-body .about-bottom .emoji-row {
-    font-size: 15px;
-    height: 21px;
-}
-
-.about-body .about-bottom .emoji-row img {
-    width: 21px;
-    height: 21px;
-}
-
-.about-body .about-bottom a {
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    color: #000000;
-}
-
-.about-body .social img {
-    width: 15px;
-    height: 15px;
-}
-
-.about-body .quote-image img {
-    width: 158px;
-    height: 109px;
-    object-fit: contain;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-}
-
-.about-body .quote-image iframe {
-    width: 200px;
-    height: 150px;
-    object-fit: contain;
 }
