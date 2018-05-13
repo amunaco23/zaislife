@@ -432,6 +432,10 @@
 	margin-top: 1px;
 }
 
+.table th.sorted.ascending, .table th.sorted.descending {
+    background-color: #DAEDD9;
+}
+
 .table th.sorted.ascending span.arrows:after {
     border-top-color: #000;
 }
