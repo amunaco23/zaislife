@@ -115,23 +115,6 @@ function showTableDataByFilter(city){
     $(".table tbody").html(html);
     $(".table tbody td.expand").click(expandRow);
     $(".table").tablesort().data('tablesort').sort($("th.avg"), "desc", true);
-
-    // var clicks = $(this).data("numberOfClicks");
-        // if (clicks){
-        //     var clicksInt = parseInt(clicks);
-        //     clicksInt++;
-        //     if (clicksInt == 3){
-        //         $(".filteredColumn").data("numberOfClicks", 0);
-        //         $(".filteredColumn").removeClass("filteredColumn");
-        //         $(".table").tablesort().data('tablesort').sort($("th.avg"), "desc");
-        //     }
-        //     else{
-        //         $(".filteredColumn").removeClass("filteredColumn");
-        //         $(this).addClass("filteredColumn");
-        //         $(this).data("numberOfClicks", clicksInt);
-        //     }
-            
-        // }
 }
 
 var NEW_YORK = "NEW YORK";

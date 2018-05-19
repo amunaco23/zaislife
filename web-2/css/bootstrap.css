@@ -27,10 +27,10 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
-  --breakpoint-sm: 800px;
+  --breakpoint-sm: 835px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 1200px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 1150px;
+  --breakpoint-xl: 1150px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -561,7 +561,7 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .container {
     max-width: 540px;
   }
@@ -573,13 +573,13 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .container {
     max-width: 1140px;
   }
@@ -832,7 +832,7 @@ pre code {
   margin-left: 91.666667%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1176,7 +1176,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .col-lg {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1348,7 +1348,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -2246,7 +2246,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .form-inline label {
     display: -ms-flexbox;
     display: flex;
@@ -4025,7 +4025,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .navbar-expand-sm {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4109,7 +4109,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4151,7 +4151,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .navbar-expand-xl {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4455,7 +4455,7 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .card-deck {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -4486,7 +4486,7 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .card-group {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -4552,7 +4552,7 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -4841,7 +4841,7 @@ input[type="button"].btn-block {
   border-radius: 0.3rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .jumbotron {
     padding: 4rem 2rem;
   }
@@ -5440,7 +5440,7 @@ button.close {
   overflow: scroll;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -5453,9 +5453,9 @@ button.close {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .modal-lg {
-    max-width: 800px;
+    max-width: 835px;
   }
 }
 
@@ -6245,7 +6245,7 @@ button.bg-dark:focus {
   display: inline-flex !important;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .d-sm-none {
     display: none !important;
   }
@@ -6309,7 +6309,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .d-lg-none {
     display: none !important;
   }
@@ -6341,7 +6341,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .d-xl-none {
     display: none !important;
   }
@@ -6618,7 +6618,7 @@ button.bg-dark:focus {
   align-self: stretch !important;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .flex-sm-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -6896,7 +6896,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .flex-lg-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7035,7 +7035,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7186,7 +7186,7 @@ button.bg-dark:focus {
   float: none !important;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .float-sm-left {
     float: left !important;
   }
@@ -7210,7 +7210,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .float-lg-left {
     float: left !important;
   }
@@ -7222,7 +7222,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .float-xl-left {
     float: left !important;
   }
@@ -7676,7 +7676,7 @@ button.bg-dark:focus {
   margin-left: auto !important;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .m-sm-0 {
     margin: 0 !important;
   }
@@ -8176,7 +8176,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .m-lg-0 {
     margin: 0 !important;
   }
@@ -8426,7 +8426,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -8706,7 +8706,7 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 835px) {
   .text-sm-left {
     text-align: left !important;
   }
@@ -8730,7 +8730,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .text-lg-left {
     text-align: left !important;
   }
@@ -8742,7 +8742,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .text-xl-left {
     text-align: left !important;
   }
@@ -8924,10 +8924,10 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3;
   }
   body {
-    min-width: 1200px !important;
+    min-width: 1150px !important;
   }
   .container {
-    min-width: 1200px !important;
+    min-width: 1150px !important;
   }
   .navbar {
     display: none;
