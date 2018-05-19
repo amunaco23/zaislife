@@ -28,8 +28,8 @@ function showInfo(data, tabletop) {
     setLinks();
     $(".loader-container").hide();
     $(".hidden-on-load").show();
-    $(".table").tablesort().data('tablesort').sort($("th.rest-name"));
-    handleOverflow();
+    $(".table thead tr th").click(handleFilterClick);
+    // handleOverflow();
 }
 
 function setFilters(){
@@ -46,12 +46,24 @@ function setFilters(){
     $(".filter-row .filter-item").click(filterRows); 
 }
 
+function handleFilterClick() {
+
+    if ($(this).hasClass("filteredColumn")){
+        return;
+    }
+    $(".filteredColumn").removeClass("filteredColumn");
+    $(this).addClass("filteredColumn");
+
+}
+
 function filterRows(){
     var filter = $(this);
     if (filter.hasClass("selected")){
         return;
     }
 
+    $(".filteredColumn").data("numberOfClicks", 0);
+    $(".filteredColumn").removeClass("filteredColumn");
     $(".selected").removeClass("selected");
     filterByItem(filter);
     showColumns();
@@ -102,6 +114,24 @@ function showTableDataByFilter(city){
     var html = template(handleBarData);
     $(".table tbody").html(html);
     $(".table tbody td.expand").click(expandRow);
+    $(".table").tablesort().data('tablesort').sort($("th.avg"), "desc", true);
+
+    // var clicks = $(this).data("numberOfClicks");
+        // if (clicks){
+        //     var clicksInt = parseInt(clicks);
+        //     clicksInt++;
+        //     if (clicksInt == 3){
+        //         $(".filteredColumn").data("numberOfClicks", 0);
+        //         $(".filteredColumn").removeClass("filteredColumn");
+        //         $(".table").tablesort().data('tablesort').sort($("th.avg"), "desc");
+        //     }
+        //     else{
+        //         $(".filteredColumn").removeClass("filteredColumn");
+        //         $(this).addClass("filteredColumn");
+        //         $(this).data("numberOfClicks", clicksInt);
+        //     }
+            
+        // }
 }
 
 var NEW_YORK = "NEW YORK";

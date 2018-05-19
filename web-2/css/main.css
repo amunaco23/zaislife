@@ -315,6 +315,7 @@
 .table td.avg {
     /* text-align: center; */
     font-weight: 400;
+    color: #000;
 }
 
 .table td.barstool {
@@ -432,15 +433,15 @@
 	margin-top: 1px;
 }
 
-.table th.sorted.ascending, .table th.sorted.descending {
+.table th.filteredColumn {
     background-color: #DAEDD9;
 }
 
-.table th.sorted.ascending span.arrows:after {
+.table th.sorted.descending span.arrows:after {
     border-top-color: #000;
 }
  
-.table th.sorted.descending span.arrows:before {
+.table th.sorted.ascending span.arrows:before {
     border-bottom-color: #000;
 }
 
