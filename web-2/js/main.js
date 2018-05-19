@@ -47,8 +47,8 @@ function setFilters(){
 }
 
 function handleFilterClick() {
-
-    if ($(this).hasClass("filteredColumn")){
+    if ($(this).hasClass("filteredColumn") || $(this).hasClass("justRemoved")){ 
+        $(this).removeClass("justRemoved")
         return;
     }
     $(".filteredColumn").removeClass("filteredColumn");

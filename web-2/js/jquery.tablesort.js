@@ -42,6 +42,8 @@
 					if (clicksInt == 3) {
 						$(".filteredColumn").data("numberOfClicks", 0);
 						if (!th.hasClass("avg")){
+							//First run is a little buggy and event handlers fire in a weird order
+							$(".filteredColumn").addClass("justRemoved")
 							$(".filteredColumn").removeClass("filteredColumn");
 						}
 						$(".table").tablesort().data('tablesort').sort($("th.avg"), "desc", true);
