@@ -1,6 +1,6 @@
 
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container-fluid {
@@ -35,12 +35,12 @@
     padding: 3px 8px 3px 0px;
     height: 31px;
     color: #fff;
-    background-color: #DD4558;
+    background-color: #000000;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     vertical-align: middle;
 }
 
-.header span{
+.header span, .header h1{
     font-size: 14px;
     font-weight: 900;
     font-style: normal;
@@ -49,9 +49,11 @@
     letter-spacing: -0.2px;
     text-align: left;
     color: #ffffff;
+    display: inline;
+    margin: 0;
 }
 
-.header span a {
+.header span a, .header h1 a {
     color: #fff;
 }
 
@@ -67,7 +69,11 @@
 }
 
 .filter-row {
-    margin: 20px 0;
+    margin: 10px 0;
+}
+
+.filter-row .city-container {
+    padding-left: 5px;
 }
 
 .filter-row .filter-item {
@@ -392,12 +398,14 @@
 }
 
 .table .zaisliferecom .map-all {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 900;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
     float: right;
+    vertical-align: top;
+    line-height: 14px;
   }
 
   .table .zaisliferecom .map-image{
@@ -405,7 +413,7 @@
     height: 15px;
     object-fit: contain;
     background-color: #fff;
-    margin-right: 5px;
+    margin-right: 2px;
   }
 
 .table th span.arrows {
