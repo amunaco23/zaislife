@@ -8,9 +8,10 @@
 }
 
 .table-row-wrapper {
-    background-image: url("../img/background-image-4.png");
+    background-image: url("../img/background-image-5.png");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-size: 568px 735px;
+    background-position: 39% 82%;
 }
 
 @media (max-width: 1150px) {

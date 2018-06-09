@@ -29,7 +29,7 @@ function showInfo(data, tabletop) {
     $(".loader-container").hide();
     $(".hidden-on-load").show();
     $(".table thead tr th").click(handleFilterClick);
-    // handleOverflow();
+    handleOverflow();
 }
 
 function setFilters(){
@@ -164,7 +164,8 @@ function setLinks(){
 
 function handleOverflow(){
     $(".zaisliferecom").each(function(){
-        if ($(this)[0].scrollWidth >  $(this).innerWidth()) {
+        if (this.scrollWidth >  $(this).innerWidth()) {
+            console.log("hey its wrong");
         }
     });
     
