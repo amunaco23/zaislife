@@ -34,6 +34,11 @@
 				th.data("numberOfClicks", 1);
 			}
 
+			//barstool
+			//yelp
+			//infatuation
+			//zaislifescore
+
 			if (!isStart) {
 				var clicks = th.data("numberOfClicks");
 				if (clicks) {
@@ -70,7 +75,11 @@
 
 			//click on a different column
 			if ((direction !== 'asc' && direction !== 'desc') && this.index !== th.index()) {
-				this.direction = "asc";
+				var checkDirection = "asc";
+				if (descSortClass(th)){
+					checkDirection = "desc";
+				}
+				this.direction = checkDirection;
 				this.index = th.index();
 			}
 			else if (direction !== 'asc' && direction !== 'desc') {
@@ -130,6 +139,10 @@
 		}
 
 	};
+
+	function descSortClass(th){
+		return th.hasClass("barstool") || th.hasClass("yelp") || th.hasClass("infatuation") || th.hasClass("zaislifescore");
+	}
 
 	$.tablesort.DEBUG = false;
 

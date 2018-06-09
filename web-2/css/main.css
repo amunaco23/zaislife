@@ -8,12 +8,12 @@
 }
 
 .table-row-wrapper {
-    background-image: url("../img/SliceGrey.png");
+    background-image: url("../img/background-image-4.png");
     background-repeat: no-repeat;
     background-position: center; 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
     .table-row-wrapper {
         background-image: none;
     }
@@ -512,27 +512,32 @@
 
 .about-body{
     text-align: center;
-    width: 288px;
+    width: 430px;
     margin: 0 auto;
     flex: 1 1 auto;
 }
 
 .about-body h3 {
-    font-size: 13px;
+    font-size: 48px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
+    letter-spacing: -1.2px;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .about-body .about-inner-body {
-    font-size: 12px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    color: #9b9b9b;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
 }
 
 .about-body .about-inner-body div {
@@ -540,7 +545,7 @@
 }
 
 .about-body .about-bottom div{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .about-body .about-bottom .emoji-row {
@@ -554,12 +559,15 @@
 }
 
 .about-body .about-bottom a {
-    font-size: 11px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
+    letter-spacing: -0.4px;
+    text-align: left;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .about-body .social img {
@@ -567,7 +575,7 @@
     height: 15px;
 }
 
-.about-body .quote-image img {
+/* .about-body .quote-image img {
     width: 158px;
     height: 109px;
     object-fit: contain;
@@ -578,7 +586,7 @@
     width: 200px;
     height: 150px;
     object-fit: contain;
-}
+} */
 
 @media (max-width: 835px) {
     .table tbody tr td {
@@ -629,6 +637,15 @@
 
     .map-all{
         font-size: 12px;
+    }
+
+    .about-body{
+        width: 281px;
+    }
+
+    .about-body .quote-image img {
+        width: 281px;
+        height: 364px;
     }
 
 }
