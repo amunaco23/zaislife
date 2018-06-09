@@ -26,7 +26,7 @@
                 <td class="highlighted-review avg {{avgStyle}}">
                     <span>{{avgCalculated}}</span>
                 </td>
-                <td class="rest-name">
+                <td class="rest-name" title="{{restaurant}}">
                     {{#if google-maps}}
                         <a href="{{google-maps}}" target="_blank">{{restaurant}}</a>
                     {{else}}
@@ -139,7 +139,13 @@
                 </div>
             </div>
             <div class="row filter-row  hidden-on-load" style="display: none">
-                <div class="col-11 col-md-11 city-container">
+                <div class="col-8 col-md-8 city-container">
+                </div>
+                <div class="col-4 col-md-4">
+                    <a class="map-all" target="_blank">
+                        <img src="img/map-placeholder.png" srcset="img/map-placeholder@2x.png 2x, img/map-placeholder@3x.png 3x" class="map-image" alt="zaislife map">
+                        Map All
+                    </a>
                 </div>
             </div>
         </div>
@@ -183,10 +189,6 @@
                                 </th>
                                 <th class="zaisliferecom d-none d-sm-table-cell">
                                     <span>ZaIsLife Recommendation</span><span class="arrows"></span>
-                                    <a class="map-all" target="_blank">
-                                        <img src="img/map-placeholder.png" srcset="img/map-placeholder@2x.png 2x, img/map-placeholder@3x.png 3x" class="map-image" alt="zaislife map">
-                                        Map All
-                                    </a>
                                 </th>
                             </tr>
                         </thead>

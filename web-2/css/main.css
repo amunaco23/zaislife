@@ -1,6 +1,6 @@
 
 *{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .container-fluid {
@@ -26,8 +26,9 @@
     height: 100%;
 }
 
+
 .top-nav {
-    height: 91px;
+    height: 75px;
     flex: 0 0 auto;
 }
 
@@ -41,12 +42,13 @@
 }
 
 .header span, .header h1{
+    font-family: Helvetica;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.3px;
     text-align: left;
     color: #ffffff;
     display: inline;
@@ -78,12 +80,14 @@
 
 .filter-row .filter-item {
     margin-right: 32px;
+    font-family: Helvetica;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.4px;
+    text-align: left;
     color: #8a8a8f;
     display: inline-block;
     cursor: pointer;
@@ -92,10 +96,11 @@
 
 .filter-row .selected {
     font-size: 17px;
-    font-weight: 900;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
+    letter-spacing: -0.4px;
     color: #000000;
 }
 
@@ -164,11 +169,11 @@
 }
 
 .table thead tr th.rest-name{
-    width: 275px;
+    width: 230px;
 }
 
 .table thead tr th.rest-style{
-    width: 80px;
+    width: 85px;
     text-align: center;
 }
 
@@ -215,18 +220,17 @@
 }
 
 .table thead tr th {
+    font-family: Helvetica;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: -0.2px;
-    text-align: left;
+    letter-spacing: -0.3px;
     color: #000000;
     border: none;
     height: 11px;
     padding: 0px 5px 7px;
-    text-align: middle;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -251,7 +255,7 @@
     padding: 0px 5px;
     border: none;
     padding-top: 4px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .table tbody tr td a {
@@ -294,13 +298,13 @@
 
 .table tbody tr td.rest-style {
     color: #222;
-    font-weight: 600;
+    font-size: 15px;
 }
 
 .table tbody tr td.rest-name {
     color: #000;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 15px;
+    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -351,7 +355,7 @@
 
 .table .mobile-information div span:first-child {
     text-transform: uppercase;
-    width: 149px;
+    width: 140px;
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
@@ -397,23 +401,25 @@
     cursor: pointer;
 }
 
-.table .zaisliferecom .map-all {
+.map-all {
     font-size: 13px;
     font-weight: 900;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
     float: right;
-    vertical-align: top;
-    line-height: 14px;
+    /* vertical-align: top; */
+    /* line-height: 5px; */
   }
 
-  .table .zaisliferecom .map-image{
+.filter-row img.map-image{
     width: 10.5px;
     height: 15px;
     object-fit: contain;
     background-color: #fff;
     margin-right: 2px;
+    float: none;
+    vertical-align: top;
   }
 
 .table th span.arrows {
@@ -572,4 +578,57 @@
     width: 200px;
     height: 150px;
     object-fit: contain;
+}
+
+@media (max-width: 835px) {
+    .table tbody tr td {
+        font-size: 13px;
+    }
+
+    .table tbody tr td.rest-name{
+        font-size: 13px;
+    }
+
+    .table tbody tr td.rest-style{
+        font-size: 13px;
+    }
+
+    .table .mobile-information div{
+        font-size: 12px;
+    }
+    .table .mobile-information div span:first-child{
+        font-size: 13px;
+    }
+
+    .table thead tr th{
+        font-size: 13px;
+    }
+
+    .table thead tr th.avg{
+        width: 49px;
+    }
+
+    .table thead tr th.rest-name {
+        width: 160px;
+    }
+
+    .table thead tr th.expand{
+        width: 22px;
+    }
+    .table thead tr th.rest-style{
+        width: 110px;
+    }
+
+    .filter-row .selected{
+        font-size: 14px;
+    }
+
+    .filter-row .filter-item{
+        font-size: 14px;
+    }
+
+    .map-all{
+        font-size: 12px;
+    }
+
 }
