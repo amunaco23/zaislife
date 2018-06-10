@@ -173,7 +173,7 @@ function handleOverflow(){
 
 function expandRow(){
     var expandButton = $(this);
-    if (expandButton.text().toLowerCase() == "+") {
+    if (expandButton.text().toLowerCase().trim() == "+") {
         expandButton.text("-");
         expandButton.parents("tr").find(".mobile-information").slideDown();
     }

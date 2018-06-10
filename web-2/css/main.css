@@ -174,7 +174,7 @@
 }
 
 .table thead tr th.rest-style{
-    width: 85px;
+    width: 105px;
     text-align: center;
 }
 
@@ -356,7 +356,7 @@
 
 .table .mobile-information div span:first-child {
     text-transform: uppercase;
-    width: 140px;
+    width: 125px;
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
@@ -495,6 +495,7 @@
     letter-spacing: -0.2px;
     text-align: left;
     color: #9b9b9b;
+    text-transform: uppercase;
 }
 
 .bottom-nav .quote{
@@ -519,6 +520,7 @@
 }
 
 .about-body h3 {
+    text-transform: uppercase;
     font-size: 48px;
     font-weight: bold;
     font-style: normal;
@@ -576,20 +578,9 @@
     height: 15px;
 }
 
-/* .about-body .quote-image img {
-    width: 158px;
-    height: 109px;
-    object-fit: contain;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-}
+/* MOBILE */
+@media (max-width: 1150px) {
 
-.about-body .quote-image iframe {
-    width: 200px;
-    height: 150px;
-    object-fit: contain;
-} */
-
-@media (max-width: 835px) {
     .table tbody tr td {
         font-size: 13px;
     }
@@ -611,10 +602,13 @@
 
     .table thead tr th{
         font-size: 13px;
+        padding-left: 8px;
     }
 
     .table thead tr th.avg{
-        width: 49px;
+        width: 65px;
+        max-width: 65px;
+        /* text-align: left; */
     }
 
     .table thead tr th.rest-name {
@@ -624,16 +618,14 @@
     .table thead tr th.expand{
         width: 22px;
     }
-    .table thead tr th.rest-style{
-        width: 110px;
-    }
 
     .filter-row .selected{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .filter-row .filter-item{
-        font-size: 14px;
+        margin-right: 5px;
+        font-size: 13px;
     }
 
     .map-all{
@@ -648,5 +640,54 @@
         width: 281px;
         height: 364px;
     }
-
+    
+    .table tbody tr td.avg {
+        text-align: left;
+    }
+    .table thead tr th.avg{
+        text-align: left;
+    }
+      
 }
+@media (max-width: 605px) {
+    .bottom-nav .bottom-nav-col {
+        padding-left: 0px;
+    }
+
+    .table thead tr th.avg{
+        width: 54px;
+        max-width: 54px;
+    }
+    .table thead tr th.rest-name{
+        width: 142px;
+    }
+
+    .filter-row .filter-item{
+        margin-right: 2px;
+    }
+    .container-fluid {
+        padding-left: 5px;
+    }
+
+    .filter-row .city-container {
+        padding-left: 1px;
+        padding-right: 0px;
+    }
+
+    .table thead tr th.expand{
+        width: 12px;
+    }
+
+    .header span, .header h1{
+        padding-left: 10px;
+    }
+
+    .map-all-container{
+        padding: 0 10px 0 0px;
+    }
+
+    .table thead tr th.rest-style{
+        width: 95px;
+    }
+        
+}  
