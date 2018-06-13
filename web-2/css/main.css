@@ -136,6 +136,11 @@
     display: flex;
 }
 
+.loader-container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .loader-row {
     width: 100%;
 }
@@ -148,10 +153,13 @@
     top: 50%;
     left: 50%;
     position: fixed;
-    margin-left: -32px;
-    margin-top: -32px;
+    margin-left: -15px;
+    margin-top: -25px;
 }
 
+div.loader {
+    padding: 0px;
+}
 .table-row-wrapper .row {
     width: 100%;
 }
@@ -175,7 +183,7 @@
 
 .table thead tr th.rest-style{
     width: 105px;
-    text-align: center;
+    text-align: left;
 }
 
 .table thead tr th.barstool{
@@ -300,6 +308,7 @@
 .table tbody tr td.rest-style {
     color: #222;
     font-size: 13px;
+    text-align: left;    
 }
 
 .table tbody tr td.rest-name {
@@ -314,9 +323,6 @@
 .table tbody tr td.rest-name a {
     color: #000;
 }
-
-.table td.rest-style {
-    text-align: center;
 }
 
 .table td.rest-name {
@@ -603,7 +609,7 @@
     }
 
     .filter-row .filter-item {
-        margin-right: 5px;
+        margin-right: 6px;
     }
 
     .about-body{
@@ -638,7 +644,7 @@
     }
 
     .filter-row .filter-item{
-        margin-right: 2px;
+        margin-right: 6px;
     }
     .container-fluid {
         padding-left: 5px;
