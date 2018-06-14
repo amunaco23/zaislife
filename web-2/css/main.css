@@ -468,7 +468,7 @@ div.loader {
 }
 
 .bottom-nav {
-    /* flex: 0 0 auto; */
+    flex: 0 0 auto;
     height: 31px;
     padding: 5px 15px 5px 19px;
     line-height: 31px;
