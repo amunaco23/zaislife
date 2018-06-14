@@ -47,6 +47,10 @@ function setFilters(){
 }
 
 function handleFilterClick() {
+    if ($(this).hasClass("no-sort")){
+        return;
+    }
+
     if ($(this).hasClass("filteredColumn") || $(this).hasClass("justRemoved")){ 
         $(this).removeClass("justRemoved")
         return;

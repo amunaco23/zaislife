@@ -68,7 +68,7 @@
     float: right;
     line-height: 15px;
     vertical-align: middle;
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 .filter-row {
@@ -219,6 +219,7 @@ div.loader {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: default;
 }
 
 .table tbody tr td.zaisliferecom{
@@ -467,7 +468,7 @@ div.loader {
 }
 
 .bottom-nav {
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     height: 31px;
     padding: 5px 15px 5px 19px;
     line-height: 31px;
@@ -490,6 +491,7 @@ div.loader {
 }
 .bottom-nav img {
     height: 12px;
+    margin-right: 3px;
 }
 
 .bottom-nav a {
@@ -672,7 +674,7 @@ div.loader {
     }
 
     .bottom-nav {
-        padding-left: 16px;
+        padding-left: 17px;
     }
         
 }  
