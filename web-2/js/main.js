@@ -7,6 +7,10 @@ $(document).ready(function(){
     $(".updated-text").text(dateString);
 });
 
+$(window).resize(function() {
+    handleOverflow();
+});
+
 var key = "1o5rqwDvo2Q3-68HTWGC-RMFOx84YRQEBJbvZp-PXRnQ";
 var defaultCity = "Chicago"
 var tableData; 
@@ -30,6 +34,7 @@ function showInfo(data, tabletop) {
     $(".hidden-on-load").show();
     $(".table thead tr th").click(handleFilterClick);
     handleOverflow();
+    $("td.zaisliferecom a").click(showMore);
 }
 
 function setFilters(){
@@ -74,6 +79,7 @@ function filterRows(){
     setLinks();
     $(".table").tablesort();
     handleOverflow();
+    $("td.zaisliferecom a").click(showMore);
 }
 
 function filterByItem(filterRow){
@@ -167,9 +173,13 @@ function setLinks(){
 }
 
 function handleOverflow(){
-    $(".zaisliferecom").each(function(){
-        if (this.scrollWidth >  $(this).innerWidth()) {
-            console.log("hey its wrong");
+    $("td.zaisliferecom div").each(function() {
+        var cell = $(this).parent();
+        if (this.scrollWidth > cell.innerWidth()) {
+            cell.addClass("overflow-cell");
+        }
+        else {
+            cell.removeClass("overflow-cell");
         }
     });
     
@@ -190,4 +200,20 @@ function expandRow(){
 function round(value, precision) {
     var multiplier = Math.pow(10, precision || 0);
     return Math.round(value * multiplier) / multiplier;
+}
+
+function showMore(){
+    var link = $(this);
+    var cell = link.parent();
+    
+    if (link.text().trim() == "More"){
+        cell.addClass("show-more");
+        // cell.slideDown();
+        link.text("Hide");
+    }
+    else {
+        cell.removeClass("show-more");
+        // cell.slideUp();
+        link.text("More");        
+    }
 }

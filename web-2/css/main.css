@@ -110,8 +110,8 @@
 }
 
 .table-row-wrapper{
-    flex: 1 1 auto;
-    display: flex;
+    /* flex: 1 1 auto; */
+    /* display: flex; */
 }
 
 .table-container {
@@ -222,11 +222,54 @@ div.loader {
     cursor: default;
 }
 
-.table tbody tr td.zaisliferecom{
+.table tbody tr td.zaisliferecom {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 43%;
+    text-align: left;
+}
+
+.table tbody tr td.zaisliferecom div {
+    overflow: hidden;
+}
+
+.table tbody tr td.zaisliferecom a.more {
+    display: none;
+}
+
+.table tbody tr td.overflow-cell {
+
+position: relative;
+}
+
+.table tbody tr td.overflow-cell a.more {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #dee2e6;
+    padding: 2px 7px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.table tbody tr td.overflow-cell div {
+    width: 86%;
+    display: inline-block;
+}
+
+.table tbody tr td.show-more {
+
+white-space: normal;
+}
+
+.table tbody tr td.show-more div {
+
+overflow: visible;
+}
+
+.table tbody tr td.show-more a.more {
+    
 }
 
 .table thead tr th {
@@ -352,10 +395,6 @@ div.loader {
     text-align: center;
 }
 
-.table td.zaisliferecom {
-    text-align: left;
-}
-
 .table .mobile-information {
     display: none;
     margin: 5px 0;
@@ -416,18 +455,20 @@ div.loader {
     color: #000000;
     text-transform: uppercase;
     float: right;
-    /* vertical-align: top; */
-    /* line-height: 5px; */
+    line-height: 24px;
+    vertical-align: middle;
+    position: relative;
   }
 
 .filter-row img.map-image{
     width: 10.5px;
     height: 15px;
-    object-fit: contain;
     background-color: #fff;
-    margin-right: 2px;
     float: none;
-    vertical-align: top;
+    /* vertical-align: middle; */
+    /* line-height: 14px; */
+    top: -2px;
+    position: relative;
   }
 
 .table th span.arrows {
@@ -453,6 +494,11 @@ div.loader {
 .table th span.arrows:after {
 	border-top-color: #999999;
 	margin-top: 1px;
+}
+
+.table thead tr th.zaisliferecom span.arrows:before,
+.table thead tr th.zaisliferecom span.arrows:after {
+    display: none;
 }
 
 .table th.filteredColumn {
