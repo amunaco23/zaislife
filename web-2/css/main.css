@@ -110,8 +110,8 @@
 }
 
 .table-row-wrapper{
-    /* flex: 1 1 auto; */
-    /* display: flex; */
+    flex: 1 1 auto;
+    display: flex;
 }
 
 .table-container {
