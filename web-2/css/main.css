@@ -518,9 +518,11 @@ overflow: visible;
 .bottom-nav {
     flex: 0 0 auto;
     height: 31px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 0px 5px 5px;
     line-height: 31px;
     border-top: solid 1px rgba(155, 155, 155, 0.17);
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .bottom-nav div:first-child {
@@ -559,6 +561,60 @@ overflow: visible;
 }
 
 .bottom-nav .quote{
+    font-size: 11px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #9b9b9b;
+    text-align: right;
+    padding-right: 0px;
+    float: right;
+    line-height: 21px;
+}
+
+/* ABOUT STRUCTURE */
+
+.about-container .bottom-nav {
+    flex: 0 0 auto;
+    height: 31px;
+    padding: 5px 15px 5px 15px;
+    line-height: 31px;
+    border-top: solid 1px rgba(155, 155, 155, 0.17);
+}
+
+.about-container .bottom-nav div:first-child {
+    padding-left: 0px;
+}
+
+.about-container .bottom-nav .bottom-nav-col {
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.about-container .bottom-nav img {
+    height: 12px;
+    margin-right: 3px;
+}
+
+.about-container .bottom-nav a {
+    text-decoration: none;
+}
+
+.about-container .bottom-nav .about{
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #9b9b9b;
+    text-transform: uppercase;
+}
+
+.about-container .bottom-nav .quote{
     font-size: 11px;
     font-weight: 300;
     font-style: normal;
@@ -722,7 +778,7 @@ overflow: visible;
     }
 
     .bottom-nav {
-        padding-left: 17px;
+        padding-left: 5px;
     }
         
 }  
