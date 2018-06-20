@@ -100,7 +100,7 @@ function showTableDataByFilter(city){
     var filterdData = _.filter(tableData, function(item){ return item.city.toUpperCase() == city.toUpperCase(); });
     
     for (var index = 0; index < filterdData.length; index++){
-        if (filterdData[index].avg){
+        if (filterdData[index].avg && !isNaN(filterdData[index].avg)){
             filterdData[index].avgCalculated = round(filterdData[index].avg, 1);
             if (filterdData[index].avgCalculated >= HIGH_TIER){
                 filterdData[index].avgStyle = HIGH_TIER_COLOR;
