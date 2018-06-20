@@ -741,19 +741,19 @@ overflow: visible;
     }
 
     .table thead tr th.avg{
-        width: 54px;
-        max-width: 54px;
+        width: 51px;
+        max-width: 51px;
         padding-left: 6px;
     }
     .table thead tr th.rest-name{
-        width: 142px;
+        width: 131px;
     }
 
     .filter-row .filter-item{
         margin-right: 6px;
     }
     .container-fluid {
-        padding-left: 5px;
+        /* padding-left: 5px; */
     }
 
     .filter-row .city-container {
@@ -762,7 +762,7 @@ overflow: visible;
     }
 
     .table thead tr th.expand{
-        width: 12px;
+        width: 7px;
     }
 
     .map-all-container{
@@ -770,7 +770,7 @@ overflow: visible;
     }
 
     .table thead tr th.rest-style{
-        width: 95px;
+        width: 97px;
     }
 
     .table tbody tr td.avg {
@@ -778,7 +778,7 @@ overflow: visible;
     }
 
     .bottom-nav {
-        padding-left: 5px;
+        /* padding-left: 5px; */
     }
         
 }  
