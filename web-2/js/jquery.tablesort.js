@@ -34,11 +34,6 @@
 				th.data("numberOfClicks", 1);
 			}
 
-			//barstool
-			//yelp
-			//infatuation
-			//zaislifescore
-
 			if (!isStart) {
 				var clicks = th.data("numberOfClicks");
 				if (clicks) {
@@ -101,11 +96,15 @@
 			setTimeout(function () {
 				self.$sortCells.removeClass(self.settings.asc + ' ' + self.settings.desc);
 				for (var i = 0, length = unsortedValues.length; i < length; i++) {
+					var currentValue =  unsortedValues[i];
+					if (th.hasClass("avg") && isNaN(currentValue)){
+						currentValue = 0;
+					}					 
 					sortedMap.push({
 						index: i,
 						cell: cells[i],
 						row: rows[i],
-						value: unsortedValues[i]
+						value: currentValue
 					});
 				}
 

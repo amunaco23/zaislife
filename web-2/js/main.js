@@ -113,7 +113,7 @@ function showTableDataByFilter(city){
             }
         }
         else{
-            filterdData[index].avgCalculated = "";
+            filterdData[index].avgCalculated = filterdData[index].avg;
             filterdData[index].avgStyle = "";
         }
     }
